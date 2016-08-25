@@ -1,5 +1,5 @@
 jobs:
-  - name: script-spaceBar
+  - name: spaceBar1
     type: runSh
     steps:
       - IN: sample-script
@@ -11,7 +11,7 @@ jobs:
         - script: tree -F IN
         - script: IN/sample-script/gitRepo/echo.sh
 
-  - name: script-spaceBar
+  - name: spaceBar2
     type: runSh
     steps:
       - IN: sample-script-dup
