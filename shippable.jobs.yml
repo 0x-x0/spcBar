@@ -4,6 +4,7 @@ jobs:
     steps:
       - IN: sample-script
       - IN: triggertest1
+      - OUT: runImage
       - TASK:
         - script: sudo apt-get install tree
         - pwd
