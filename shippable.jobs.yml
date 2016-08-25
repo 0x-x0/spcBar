@@ -10,3 +10,14 @@ jobs:
         - pwd
         - script: tree -F IN
         - script: IN/sample-script/gitRepo/echo.sh
+
+  - name: script-spaceBar
+    type: runSh
+    steps:
+      - IN: sample-script-dup
+      - IN: runImage
+      - TASK:
+        - script: sudo apt-get install tree
+        - pwd
+        - script: tree -F IN
+        - script: IN/sample-script-dup/gitRepo/echo.sh
