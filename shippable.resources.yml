@@ -4,10 +4,7 @@ resources:
     integration: github
     pointer:
       sourceName: chetantarale/sample-script
-      branch:
-        only:
-          - stage
-          - prod
+      branch: master
 
   - name: runImage
     type: image
