@@ -4,7 +4,7 @@ resources:
     integration: github
     pointer:
       sourceName: chetantarale/sample-script
-      branches:
+      branch:
         only:
           - stage
           - prod
