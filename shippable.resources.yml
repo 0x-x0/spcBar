@@ -14,10 +14,3 @@ resources:
       isPull: false
     seed:
       versionName: latest
-
-  - name: sample-script-dup
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: chetantarale/sample-script
-      branch: master
