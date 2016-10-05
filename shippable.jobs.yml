@@ -2,18 +2,11 @@ jobs:
   - name: spaceBar1
     type: runSh
     steps:
-      - IN: sample-script
-      - IN: spaceBar2
+      #- IN: sample-script
+      - IN: runImage
       - OUT: runImage
       - TASK:
         - script: sudo apt-get install tree
         - pwd
         - script: tree -F IN
         - script: IN/sample-script/gitRepo/echo.sh
-
-  - name: spaceBar2
-    type: runSh
-    steps:
-      - IN: runImage
-      - IN: spaceBar1
-        
