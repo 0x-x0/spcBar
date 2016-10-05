@@ -5,6 +5,7 @@ resources:
     pointer:
       sourceName: chetantarale/sample-script
       branch: master
+      
   - name: runImage
     type: image
     integration: dockerhub
@@ -13,11 +14,10 @@ resources:
       isPull: false
     seed:
       versionName: latest
-
-
-  # - name: sample-script-dup
-  #   type: gitRepo
-  #   integration: github
-  #   pointer:
-  #     sourceName: chetantarale/sample-script
-  #     branch: master
+      
+   - name: sample-script-dup
+     type: gitRepo
+     integration: github
+     pointer:
+       sourceName: chetantarale/sample-script
+       branch: master
