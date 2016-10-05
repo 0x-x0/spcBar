@@ -6,12 +6,12 @@ resources:
       sourceName: chetantarale/sample-script
       branch: master
   
-  - name: sample-script-dup
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: chetantarale/sample-script
-      branch: master
+#  - name: sample-script-dup
+#    type: gitRepo
+#    integration: github
+#    pointer:
+#      sourceName: chetantarale/sample-script
+#      branch: master
       
   - name: runImage
     type: image
