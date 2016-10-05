@@ -5,7 +5,8 @@ resources:
     pointer:
       sourceName: chetantarale/sample-script
       branch: master
-  
+    flags:
+      - script
 #  - name: sample-script-dup
 #    type: gitRepo
 #    integration: github
