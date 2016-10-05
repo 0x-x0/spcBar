@@ -16,9 +16,4 @@ jobs:
     steps:
       - IN: runImage
       - IN: spaceBar1
-      - TASK:
-        - script: sudo apt-get install tree
-        - pwd
-        - script: tree -F IN
-        - script: IN/sample-script-dup/gitRepo/echo.sh
         
