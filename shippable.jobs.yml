@@ -2,9 +2,9 @@ jobs:
   - name: spaceBar1
     type: runSh
     steps:
-      #- IN: sample-script
+      - IN: sample-script
       - IN: runImage
-      - OUT: runImage
+      #- OUT: runImage
       - TASK:
         - script: sudo apt-get install tree
         - pwd
