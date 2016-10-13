@@ -13,4 +13,7 @@ jobs:
     steps:
       - IN: runImageOut
       - IN: sample-script
-
+      - TASK:
+        - script: sudo apt-get install tree
+        - pwd
+        
