@@ -6,3 +6,11 @@ jobs:
       - OUT: runImageOut
       - TASK:
         - pwd
+
+  - name: romeo
+    type: runSh
+    steps:
+      - IN: runImageOut
+      - IN: sample-script
+      - TASK:
+        - pwd
