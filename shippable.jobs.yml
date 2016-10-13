@@ -1,16 +1,16 @@
 jobs:
-  - name: delta
+  - name: spaceBar1
     type: runSh
     steps:
       - IN: runImageIn
       - OUT: runImageOut
       - TASK:
+        - script: sudo apt-get install tree
         - pwd
-
+        
   - name: romeo
     type: runSh
     steps:
       - IN: runImageOut
       - IN: sample-script
-      - TASK:
-        - pwd
+
