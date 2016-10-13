@@ -10,7 +10,7 @@ resources:
      
   - name: sample-script-dup
     type: gitRepo
-   integration: github
+    integration: github
     pointer:
       sourceName: chetantarale/sample-script
       branch: master
