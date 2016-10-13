@@ -2,21 +2,7 @@ jobs:
   - name: delta
     type: runSh
     steps:
-      - IN: sample-script
-      - OUT: runImage
+      - IN: runImageIn
+      - OUT: runImageOut
       - TASK:
-        - script: sudo apt-get install tree
         - pwd
-        - script: tree -F IN
-        - script: IN/sample-script/gitRepo/echo.sh
-
-  - name: eagle
-    type: runSh
-    steps:
-      - IN: sample-script-dup
-      - IN: runImage
-      - TASK:
-        - script: sudo apt-get install tree
-        - pwd
-        - script: tree -F IN
-        - script: IN/sample-script/gitRepo/echo.sh
