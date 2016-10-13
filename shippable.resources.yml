@@ -1,19 +1,19 @@
 resources:
-#  - name: sample-script
-#    type: gitRepo
-#    integration: github
-#    pointer:
-#      sourceName: chetantarale/sample-script
-#      branch: master
-#    flags:
-#      - script
-      
-#  - name: sample-script-dup
-#    type: gitRepo
-#   integration: github
-#    pointer:
-#      sourceName: chetantarale/sample-script
-#      branch: master
+  - name: sample-script
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: chetantarale/sample-script
+      branch: master
+    flags:
+      - script
+     
+  - name: sample-script-dup
+    type: gitRepo
+   integration: github
+    pointer:
+      sourceName: chetantarale/sample-script
+      branch: master
       
   - name: runImageIn
     type: image
