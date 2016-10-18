@@ -9,7 +9,7 @@ jobs:
         applyTo:
           - runImageIN
       - TASK: managed
-      - IN: trigger-dv-man
+      - IN: trigger
     on_success:
       - script: echo 'this is on_success step of dv-man of type manifest'
     on_failure:
