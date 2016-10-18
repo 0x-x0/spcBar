@@ -32,3 +32,48 @@ resources:
       isPull: false
     seed:
       versionName: latest
+
+
+  - name: opts
+    type: dockerOptions
+    version:
+      memory: 64
+      cpuShares: 256
+      portMappings:
+        - "80:80"
+
+  - name: params
+    type: params
+    version:
+      params:
+        MONGO_API_URL: "localhost:28017"
+    flags:
+      - run
+ 
+   - name: box-scaler
+    type: replicas
+    version:
+      count: 1
+    flags:
+      - replicas
+ 
+   - name: slackNotification
+    type: notification
+    integration: slack
+    pointer:
+      recipients:
+        - "#testIssues"
+        
+  - name: myEmail
+    type: notification
+    pointer:
+      method: email
+      recipients: 
+        -  "chetan@shippable.com"
+  
+  - name: env
+    type: cluster
+    integration: ecs
+    pointer:
+      sourceName : "test-aws" #name of the cluster we are deploying
+      region: "us-east-1"
