@@ -2,12 +2,12 @@ jobs:
   - name: dv-man
     type: manifest
     steps:
-      - IN: runImageIN
+      - IN: runImageIn
         pull: false
       - IN: opts
       - IN: params
         applyTo:
-          - runImageIN
+          - runImageIn
       - TASK: managed
       - IN: trigger
     on_success:
