@@ -50,21 +50,21 @@ resources:
     flags:
       - run
  
-   - name: box-scaler
+  - name: box-scaler
     type: replicas
     version:
       count: 1
     flags:
       - replicas
  
-   - name: slackNotification
+  - name: slackNotification
     type: notification
     integration: slack
     pointer:
       recipients:
         - "#testIssues"
         
-   - name: env
+  - name: env
     type: cluster
     integration: ecs
     pointer:
