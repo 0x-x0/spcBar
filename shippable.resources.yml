@@ -64,14 +64,7 @@ resources:
       recipients:
         - "#testIssues"
         
-  - name: myEmail
-    type: notification
-    pointer:
-      method: email
-      recipients: 
-        -  "chetan@shippable.com"
-  
-  - name: env
+   - name: env
     type: cluster
     integration: ecs
     pointer:
