@@ -38,6 +38,11 @@ jobs:
         - script: sudo apt-get install tree
         - pwd
 
+  - name: runSh2
+    type: runSh
+    steps:
+      - IN: spaceBar1
+        
   - name: deploy-test
     type: deploy
     on_start:
