@@ -25,7 +25,7 @@ jobs:
       - OUT: runImageOut
       - TASK:
         - script: sudo apt-get install tree
-        - script: IN/sample-script-dup/gitRepo/echo.sh
+        - script: IN/sample-script/gitRepo/echo.sh
         - pwd
         
   - name: runSh
