@@ -17,16 +17,16 @@ jobs:
     flags:
       - manifest
       
-#  - name: spaceBar1
-#    type: runSh
-#    steps:
-#      - IN: runImageIn
-#      - IN: sample-script
-#      - OUT: runImageOut
-#      - TASK:
-#        - script: sudo apt-get install tree
-#        - script: IN/sample-script/gitRepo/echo.sh
-#        - pwd
+  - name: spaceBar1
+    type: runSh
+    steps:
+      - IN: runImageIn
+      - IN: sample-script
+      - OUT: runImageOut
+      - TASK:
+        - script: sudo apt-get install tree
+        - script: IN/sample-script/gitRepo/echo.sh
+        - pwd
         
   - name: runSh
     type: runSh
@@ -46,16 +46,16 @@ jobs:
       - TASK:
         - pwd
         
-#  - name: deploy-test
-#    type: deploy
-#    on_start:
-#      - NOTIFY: slackNotification
-#    steps:
-#      - IN: dv-man
-#      - IN: env
-#      - TASK: managed
-#        deployMethod: upgrade
-#    on_success:
-#      - NOTIFY: slackNotification
-#    on_failure:
-#      - NOTIFY: slackNotification
+  - name: deploy-test
+    type: deploy
+    on_start:
+      - NOTIFY: slackNotification
+    steps:
+      - IN: dv-man
+      - IN: env
+      - TASK: managed
+        deployMethod: upgrade
+    on_success:
+      - NOTIFY: slackNotification
+    on_failure:
+      - NOTIFY: slackNotification
