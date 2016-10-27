@@ -46,16 +46,16 @@ jobs:
       - TASK:
         - pwd
         
-  - name: deploy-test
-    type: deploy
-    on_start:
-      - NOTIFY: slackNotification
-    steps:
-      - IN: dv-man
-      - IN: env
-      - TASK: managed
-        deployMethod: upgrade
-    on_success:
-      - NOTIFY: slackNotification
-    on_failure:
-      - NOTIFY: slackNotification
+#  - name: deploy-test
+#    type: deploy
+#    on_start:
+#      - NOTIFY: slackNotification
+#    steps:
+#      - IN: dv-man
+#      - IN: env
+#      - TASK: managed
+#        deployMethod: upgrade
+#    on_success:
+#      - NOTIFY: slackNotification
+#    on_failure:
+#      - NOTIFY: slackNotification
