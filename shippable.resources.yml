@@ -50,12 +50,12 @@ resources:
     flags:
       - run
  
-  - name: box-scaler
-    type: replicas
-    version:
-      count: 1
-    flags:
-      - replicas
+#  - name: box-scaler
+#    type: replicas
+#    version:
+#      count: 1
+#    flags:
+#      - replicas
  
   - name: slackNotification
     type: notification
