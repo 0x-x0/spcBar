@@ -70,3 +70,12 @@ resources:
     pointer:
       sourceName : "test-aws" #name of the cluster we are deploying
       region: "us-east-1"
+
+
+  - name: params2
+    type: params
+    version:
+      params:
+        MONGO_API_URL: "localhost:28017"
+    flags:
+      - run
