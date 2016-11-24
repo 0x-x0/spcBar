@@ -91,3 +91,10 @@ resources:
     pointer:
       recipients:
         - "#testIssues"
+
+  - name: slackNotification5
+    type: notification
+    integration: slack
+    pointer:
+      recipients:
+        - "#testIssues"
