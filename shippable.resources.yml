@@ -72,4 +72,9 @@ resources:
       region: "us-east-1"
 
 
-
+  - name: box-scaler2
+    type: replicas
+    version:
+      count: 1
+    flags:
+      - replicas
