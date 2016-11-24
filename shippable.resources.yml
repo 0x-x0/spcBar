@@ -60,7 +60,7 @@ resources:
   - name: slackNotification
     type: notification
     integration: slack
-   pointer:
+    pointer:
       recipients:
         - "#testIssues"
         
