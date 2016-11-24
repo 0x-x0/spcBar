@@ -32,8 +32,8 @@ jobs:
     type: runSh
     steps:
       - IN: runImageOut
-      #- IN: spaceBar1
-      #- IN: sample-script-dup
+      - IN: spaceBar1
+      - IN: sample-script-dup
       - TASK:
         - script: sudo apt-get install tree
         - pwd
