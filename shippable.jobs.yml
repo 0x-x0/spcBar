@@ -43,7 +43,7 @@ jobs:
     type: runSh
     steps:
       - IN: spaceBar1
-      - IN: runSh
+      #- IN: runSh
       - TASK:
         - pwd
         
