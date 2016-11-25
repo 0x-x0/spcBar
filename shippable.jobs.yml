@@ -32,9 +32,9 @@ jobs:
     type: runSh
     steps:
       - IN: runImageOut
-      #- IN: spaceBar1
-      #- IN: sample-script-dup
-      #- IN: slackNotification2
+      - IN: spaceBar1
+      - IN: sample-script-dup
+      - IN: slackNotification2
       - TASK:
         - script: sudo apt-get install tree
         - pwd
