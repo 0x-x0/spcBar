@@ -33,7 +33,7 @@ jobs:
     steps:
       - IN: runImageOut
       - IN: spaceBar1
-      #- IN: sample-script-dup
+      - IN: sample-script-dup
       - IN: slackNotification2
       - TASK:
         - script: sudo apt-get install tree
@@ -43,7 +43,7 @@ jobs:
     type: runSh
     steps:
       - IN: spaceBar1
-      #- IN: runSh
+      - IN: runSh
       - TASK:
         - pwd
         
