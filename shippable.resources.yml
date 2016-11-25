@@ -78,5 +78,11 @@ resources:
       recipients:
         - "#testIssues"
 
+  - name: slackNotification3
+    type: notification
+    integration: slack
+    pointer:
+      recipients:
+        - "#testIssues"
 
 
