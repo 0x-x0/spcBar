@@ -70,11 +70,4 @@ resources:
     pointer:
       sourceName : "test-aws" #name of the cluster we are deploying
       region: "us-east-1"
-
-  - name: slackNotification2
-    type: notification
-    integration: slack
-    pointer:
-      recipients:
-        - "#testIssues"
-        
+      
