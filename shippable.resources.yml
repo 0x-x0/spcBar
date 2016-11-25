@@ -71,9 +71,3 @@ resources:
       sourceName : "test-aws" #name of the cluster we are deploying
       region: "us-east-1"
  
-  - name: sample-script-dup1
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: chetantarale/sample-script
-      branch: master
