@@ -60,7 +60,7 @@ jobs:
     on_failure:
       - NOTIFY: slackNotification
 
-  - name: runSh2
+  - name: runSh3
     type: runSh
     steps:
       - IN: spaceBar1
