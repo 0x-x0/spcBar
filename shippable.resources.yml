@@ -65,9 +65,10 @@ resources:
         - "#testIssues"
         
   - name: env
-    type: cluster
-    integration: ecs
+    type: image
+    integration: dockerhub
     pointer:
-      sourceName : "test-aws" #name of the cluster we are deploying
-      region: "us-east-1"
- 
+      sourceName: "library/nginx"
+      isPull: false
+    seed:
+      versionName: latest
