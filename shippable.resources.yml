@@ -57,12 +57,12 @@ resources:
     flags:
       - replicas
  
-  - name: slackNotification
-    type: notification
-    integration: slack
-    pointer:
-      recipients:
-        - "#testIssues"
+#  - name: slackNotification
+#    type: notification
+#    integration: slack
+#    pointer:
+#      recipients:
+#        - "#testIssues"
         
   - name: env
     type: image
