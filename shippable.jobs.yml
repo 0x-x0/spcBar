@@ -26,7 +26,6 @@ jobs:
       - TASK:
         - script: sudo apt-get install tree
         - script: IN/sample-script/gitRepo/echo.sh
-        - pwd
         
   - name: runSh
     type: runSh
