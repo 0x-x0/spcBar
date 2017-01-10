@@ -72,3 +72,24 @@ resources:
       isPull: false
     seed:
       versionName: latest
+      
+  - name: orphanRes1
+    type: replicas
+    version:
+      count: 1
+    flags:
+      - orphanRes1
+ 
+  - name: orphanRes2
+    type: replicas
+    version:
+      count: 1
+    flags:
+      - orphanRes2
+  
+  - name: orphanRes3
+    type: replicas
+    version:
+      count: 1
+    flags:
+      - orphanRes3
