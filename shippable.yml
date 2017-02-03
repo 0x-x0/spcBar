@@ -9,6 +9,7 @@ node_js:
 env:
   global:
     - FOO=FUBU
+    - BOO=BUFU
     
 build:
   pre_ci:
