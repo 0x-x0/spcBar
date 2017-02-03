@@ -15,4 +15,6 @@ build:
     - echo "This is pre_ci"
   ci:
     - echo "Hello, World Ssup :)"
+    - echo " ¯_(ツ)_/¯ "
+
 
