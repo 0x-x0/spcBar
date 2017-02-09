@@ -62,7 +62,7 @@ resources:
     integration: slack
     pointer:
       recipients:
-        - "#testIssues"
+        - "#junk"
         
   - name: env
     type: image
