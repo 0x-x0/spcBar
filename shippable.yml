@@ -1,6 +1,4 @@
 # Language setting
-build_image: drydock/u14nodall:master
-
 language: node_js
 
 # Version number
