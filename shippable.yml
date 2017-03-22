@@ -16,8 +16,7 @@ build:
     - sleep 30s
   ci:
     - sudo apt-get install tree
-    - cd /tmp/ssh
-    - tree
+    - tree /tmp/ssh
  
 integrations:
   key:
