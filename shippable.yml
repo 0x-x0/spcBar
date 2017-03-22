@@ -17,7 +17,11 @@ build:
     - echo "This is pre_ci"
     - sleep 30s
   ci:
-    - echo "Hello, World sup :)"
-    - echo " ¯_(ツ)_/¯ "
-
-
+    - sudo apt-get install tree
+    - cd /tmp/ssh
+    - tree
+ 
+integrations:
+  key:
+    - integrationName: my_custom_key
+      type: ssh-key
